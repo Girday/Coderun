@@ -1,7 +1,7 @@
 def identify(args: list) -> str:
     if len(set(args)) == 1:
         return "CONSTANT"
-    
+
     ST = "START"
     AS = "ASCENDING"
     DS = "DESCENDING"
@@ -66,7 +66,7 @@ def identify(args: list) -> str:
 
 
 a = []
-while (n := int(input())) != -2 * 10 ** 9:
+while (n := int(input())) != -2 * 10**9:
     a.append(n)
 
 print(identify(a))
